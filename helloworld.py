@@ -5,4 +5,4 @@ def helloworld():
     print("hello world !")
 
 helloworld()
-sys.exit(1)
+sys.exit(0)

@@ -23,5 +23,6 @@ jobs:
             flake8 main.py
       - run:
           name: test flask sample
+          command: |
             . venv/bin/activate
             python3 tests_flask.py

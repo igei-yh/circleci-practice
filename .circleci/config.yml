@@ -25,4 +25,3 @@ jobs:
           name: test flask sample
             . venv/bin/activate
             python3 tests_flask.py
-

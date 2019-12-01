@@ -15,9 +15,8 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r requirements.txt
+            pip install -r requirements-dev.txt
       - run:
+          name: lint check
           command: |
-            . venv/bin/activate
-            python main.py &
-            curl http://localhost:5000/
+            flake8 main.py

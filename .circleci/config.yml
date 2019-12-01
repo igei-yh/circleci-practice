@@ -19,7 +19,7 @@ jobs:
       - run:
           command: |
             . venv/bin/activate
-            python main.py
+            python main.py &
       - run:
           command: |
             curl http://127.0.0.1:5000/

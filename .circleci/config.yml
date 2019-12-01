@@ -20,6 +20,4 @@ jobs:
           command: |
             . venv/bin/activate
             python main.py &
-      - run:
-          command: |
             curl http://localhost:5000/
